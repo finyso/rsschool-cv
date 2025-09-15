@@ -31,6 +31,32 @@
 
 - Course project: Sort and search visualizer on QT
 
+## **Code**
+```#include <cmath>
+
+bool narcissistic( int value ){
+  int original = value;
+  int num_digits = 0;
+  int temp = value;
+  
+  while(temp > 0){
+    num_digits++;
+    temp /= 10;
+  }
+  
+  int sum = 0;
+  temp = value;
+  
+  while(temp > 0){
+    int digit = temp % 10;
+    sum += std::pow(digit, num_digits);
+    temp /= 10;
+  }
+  
+  return sum == original;
+}
+```
+
 ## **Experience**
 - Completed an *Basic of Algorithmization and Programming in C++* on Stepik
 
