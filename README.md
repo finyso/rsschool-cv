@@ -1,1 +1,1 @@
-# rsschool-cv
+https://finyso.github.io/rsschool-cv/
