@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Finsky Pavel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="photo-placeholder">
+                <img src="IMG_7416.jpg" alt="Finsky Pavel" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div class="header-content">
+                <h1>Finsky Pavel</h1>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +375291041395
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email:</strong> <a href="mailto:finsky201222@gmail.com">finsky201222@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telegram:</strong> <a href="https://t.me/mariiuyo" target="_blank" rel="noopener">@mariiuyo</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>GitHub:</strong> <a href="https://github.com/finyso" target="_blank" rel="noopener">finyso</a>
+                    </div>
+                    <div>
+                        <strong>Discord ID:</strong> 533705570230861843
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2>About me</h2>
+            <p>Motivated and detail-oriented Computer Science student at seeking an internship as a Junior Frontend developer. Eager to apply my programming skills and knowledge in a real-world environmant while contributing to innovative projects.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Skills</h2>
+            <ul>
+                <li>C/C++ (basic), C# (basic), Python (basic)</li>
+                <li>QT Framework (basic)</li>
+                <li>Assembler (basic)</li>
+                <li>OC Windows, Linux (Ubuntu)</li>
+                <li>Tools: VS Code, Git</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="date">2024-present</div>
+                <h3>B.Sc in Informatics and Technology of Programming, BSUIR, Minsk, Belarus</h3>
+                <p>GPA: 8.5/10</p>
+                <p>Course project: Sort and search visualizer on QT</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Code</h2>
+            <pre class="code-block">#include &lt;cmath&gt;
+
+bool narcissistic(int value) {
+int original = value;
+int num_digits = 0;
+int temp = value;
+
+while(temp &gt; 0) {
+num_digits++;
+temp /= 10;
+}
+
+int sum = 0;
+temp = value;
+
+while(temp &gt; 0) {
+int digit = temp % 10;
+sum += std::pow(digit, num_digits);
+temp /= 10;
+}
+
+return sum == original;
+}</pre>
+        </section>
+        
+        <section class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>Completed an *Basic of Algorithmization and Programming in C++* on Stepik</li>
+                <li>Completed an *Introductory course in Pythton* on Stepik </li>
+                <li>Member of ICPC 2024</li>
+            </ul>
+        </section>
+        
+        <section class="section">
+            <h2>Languages</h2>
+            <ul>
+                <li>Russian(native)</li>
+                <li>Beloruusian(native)</li>
+                <li>English(A2)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
